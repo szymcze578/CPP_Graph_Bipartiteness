@@ -3,7 +3,6 @@
 A command-line program that determines whether an **undirected graph is bipartite**.  
 The program reads a graph from a text file, analyzes its structure using a **Depth-First Search (DFS)** algorithm, and outputs the result to a file.
 
----
 
 # 📖 Table of Contents
 
@@ -13,15 +12,14 @@ The program reads a graph from a text file, analyzes its structure using a **Dep
 - [Algorithm](#algorithm)
 - [Data Structures](#data-structures)
 - [Program Structure](#program-structure)
-- [Example](#example)
+- [Author](#author)
 
----
 
 # 📌 Project Description
 
 The goal of the project is to create a program that checks whether a given **undirected graph is bipartite**. A graph is bipartite if its vertices can be divided into **two disjoint sets** such that **no edge connects vertices within the same set**. If the graph is bipartite, the program outputs the vertices belonging to each group.
 
----
+
 # 📂 Input Format
 
 The graph is provided in a text file with the following rules:
@@ -31,7 +29,6 @@ The graph is provided in a text file with the following rules:
 - The file may contain **empty lines**
 - Lines may contain **extra whitespace characters**
 
----
 
 ### Example input file
 
@@ -42,7 +39,6 @@ The graph is provided in a text file with the following rules:
 
 # ▶ Program Usage
 
----
 
 The program is executed from the **command line** using two parameters:
 
@@ -53,7 +49,6 @@ The program is executed from the **command line** using two parameters:
 
 If incorrect parameters are provided, the program prints a **help message explaining how to run it correctly**.
 
----
 
 # ⚙ Algorithm
 
@@ -67,7 +62,7 @@ Steps:
 4. Assign vertices to one of **two colors (groups)**.
 5. If two adjacent vertices receive the same color → the graph is **not bipartite**.
 
-Time complexity: O(V + E)
+Time complexity: `O(V + E)`
 
 
 Where:
@@ -75,7 +70,6 @@ Where:
 - `V` – number of vertices  
 - `E` – number of edges
 
----
 
 # 🧱 Data Structures
 
@@ -95,7 +89,6 @@ Additional structures used:
 - `visited` vector – tracks visited vertices
 - `color` vector – stores group assignment of vertices
 
----
 
 # 🏗 Program Structure
 
@@ -143,9 +136,8 @@ Displays results in the console.
 
 Writes results to the output file.
 
----
 
-# 👨‍💻 Author
+# Author
 
 Project created as part of a programming assignment focused on **graph algorithms and data structures**.
 
